@@ -1,0 +1,7 @@
+[user]
+	name = fumio hashidume
+	email = hassy@air.ne.jp
+[gui]
+	encoding = utf-8
+[core]
+	quotepath = false
