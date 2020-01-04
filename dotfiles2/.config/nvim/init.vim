@@ -48,7 +48,11 @@ colorscheme desert
 " 開いたファイルのディレクトリに自動移動
 set autochdir
 
-let g:python3_host_prog = 'C:/ProgramData/Anaconda3/envs/test_py36/python'
+if has('win32')
+    let g:python3_host_prog = 'C:/ProgramData/Anaconda3/envs/test_py36/python'
+else
+    let g:python3_host_prog = '/usr/bin/python3'
+endif
 
 " tab ------------------------------------
 nnoremap <silent> <C-l> :<C-u>tabnext<CR>
@@ -76,13 +80,18 @@ if &compatible
 endif
 
 " Required:
-" set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
-set runtimepath+=C:\Users\hasif\.cache\dein\repos\github.com\Shougo\dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+" set runtimepath+=C:\Users\hasif\.cache\dein\repos\github.com\Shougo\dein.vim
 
-let s:dein_home_dir  = expand('C:\Users\hasif\.cache\dein')
-let s:dein_repo_dir  = expand('C:\Users\hasif\.cache\dein\repos\github.com\Shougo\dein.vim')
-let s:toml_file      = expand('C:\Users\hasif\.config\dein\dein.toml')
-let s:toml_lazy      = expand('C:\Users\hasif\.config\dein\dein_lazy.toml')
+" let s:dein_home_dir  = expand('C:\Users\hasif\.cache\dein')
+" let s:dein_repo_dir  = expand('C:\Users\hasif\.cache\dein\repos\github.com\Shougo\dein.vim')
+" let s:toml_file      = expand('C:\Users\hasif\.config\dein\dein.toml')
+" let s:toml_lazy      = expand('C:\Users\hasif\.config\dein\dein_lazy.toml')
+
+let s:dein_home_dir  = expand('~/.cache/dein')
+let s:dein_repo_dir  = expand('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+let s:toml_file      = expand('~/.config/dein/dein.toml')
+let s:toml_lazy      = expand('~/.config/dein/dein_lazy.toml')
 
 " if not exit dein.vim folder, git clone
 if !isdirectory(s:dein_repo_dir)

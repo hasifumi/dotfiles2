@@ -4,13 +4,13 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'Shougo/deol.nvim'
 hook_add = '''
-    source c:/users/hasif/.config/dein/plugins/deol.vim
+    source ~/.config/dein/plugins/deol.vim
 '''
 
 [[plugins]]
 repo = 'Shougo/defx.nvim'
 hook_add = '''
-    source c:/users/hasif/.config/dein/plugins/defx.vim
+    source ~/.config/dein/plugins/defx.vim
 '''
 
 [[plugins]]
@@ -20,13 +20,13 @@ build = 'make'
 [[plugins]]
 repo = 'thinca/vim-quickrun'
 hook_add = '''
-    source c:/users/hasif/.config/dein/plugins/quickrun.vim
+    source ~/.config/dein/plugins/quickrun.vim
 '''
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
-    source c:/users/hasif/.config/dein/plugins/denite.vim
+    source ~/.config/dein/plugins/denite.vim
 '''
 
 [[plugins]]
@@ -67,3 +67,4 @@ repo = 'prabirshrestha/vim-lsp'
 
 [[plugins]]
 repo = 'mattn/vim-lsp-settings'
+merged = '0'
