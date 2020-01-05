@@ -49,10 +49,4 @@ depends = ['neosnippet-snippets']
     repo = 'lighttiger2505/deoplete-vim-lsp'
     on_source = ['deoplete']
 
-[[plugins]]
-    repo = 'Shougo/neoinclude.vim'
-    on_source = ['deoplete']
 
-[[plugins]]
-    repo = 'Shougo/vimshell.vim'
-    on_source = ['deoplete']

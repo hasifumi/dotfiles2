@@ -8,6 +8,12 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'Shougo/vimshell.vim'
+hook_add = '''
+    source ~/.config/dein/plugins/vimshell.vim
+'''
+
+[[plugins]]
 repo = 'Shougo/defx.nvim'
 hook_add = '''
     source ~/.config/dein/plugins/defx.vim
@@ -69,3 +75,5 @@ repo = 'prabirshrestha/vim-lsp'
 repo = 'mattn/vim-lsp-settings'
 merged = '0'
 
+[[plugins]]
+repo = 'Shougo/vimshell.vim'

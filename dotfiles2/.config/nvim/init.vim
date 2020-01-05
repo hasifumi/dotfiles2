@@ -46,7 +46,7 @@ nmap <Esc><Esc> :noh<CR>
 colorscheme desert
 
 " 開いたファイルのディレクトリに自動移動
-set autochdir
+"set autochdir
 
 if has('win32')
     let g:python3_host_prog = 'C:/ProgramData/Anaconda3/envs/test_py36/python'

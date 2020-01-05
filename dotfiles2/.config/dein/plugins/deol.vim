@@ -1,3 +1,3 @@
-nnoremap <silent>,vs   :<C-u>Deol -split=flooting -edit-filetype=zsh <CR>
-nnoremap <silent>,vsf  :<C-u>Deol<CR>
-tnoremap <ESC>  <C-\><C-n>
+"nnoremap <silent>,ol   :<C-u>Deol -split=flooting <CR>
+"nnoremap <silent>,olf  :<C-u>Deol<CR>
+"tnoremap <ESC>  <C-\><C-n>
