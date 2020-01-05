@@ -9,7 +9,10 @@ hook_source = '''
 on_i = 1
 
 [[plugins]]
-repo = 'Shougo/neosnippet'
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
 hook_source = '''
   imap <C-k> <Plug>(neosnippet_expand_or_jump)
   smap <C-k> <Plug>(neosnippet_expand_or_jump)
@@ -32,4 +35,24 @@ depends = ['neosnippet-snippets']
 
 [[plugins]]
     repo = 'deoplete-plugins/deoplete-jedi'
+    on_source = ['deoplete']
+
+[[plugins]]
+    repo = 'JuliaEditorSupport/deoplete-julia'
+    on_source = ['deoplete']
+
+[[plugins]]
+    repo = 'deoplete-plugins/deoplete-zsh'
+    on_source = ['deoplete']
+
+[[plugins]]
+    repo = 'lighttiger2505/deoplete-vim-lsp'
+    on_source = ['deoplete']
+
+[[plugins]]
+    repo = 'Shougo/neoinclude.vim'
+    on_source = ['deoplete']
+
+[[plugins]]
+    repo = 'Shougo/vimshell.vim'
     on_source = ['deoplete']

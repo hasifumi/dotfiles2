@@ -33,6 +33,9 @@ hook_add = '''
 repo = 'Shougo/neomru.vim'
 
 [[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
 repo = 'JuliaEditorSupport/julia-vim'
 
 [[plugins]]
@@ -43,9 +46,6 @@ repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 repo = 'joshdick/onedark.vim'
-
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
 repo = 'mattn/vim-lsp-settings'
@@ -68,3 +68,4 @@ repo = 'prabirshrestha/vim-lsp'
 [[plugins]]
 repo = 'mattn/vim-lsp-settings'
 merged = '0'
+
