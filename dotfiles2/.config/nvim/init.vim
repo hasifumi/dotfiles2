@@ -49,7 +49,10 @@ colorscheme desert
 "set autochdir
 
 if has('win32')
-    let g:python3_host_prog = 'C:/ProgramData/Anaconda3/envs/test_py36/python'
+     let g:python3_host_prog = 'C:/ProgramData/Anaconda3/envs/test_py36/python'
+    " let g:python3_host_prog = 'C:/ProgramData/Anaconda3/envs/test_py37/python'
+    " let g:python3_host_prog = 'C:/Users/hasif/AppData/Local/Programs/Python/Python38/python'
+    let g:python_host_prog = 'C:/ProgramData/Anaconda3/envs/test_py27/python'
 else
     let g:python3_host_prog = '/usr/bin/python3'
 endif
@@ -118,4 +121,40 @@ endif
 " Required:
 filetype plugin indent on
 syntax enable
+
+" let s:pyls_config = {'pyls': {'plugins': {
+"     \   'pycodestyle': {'enabled': v:true},
+"     \   'pydocstyle': {'enabled': v:false},
+"     \   'pylint': {'enabled': v:false},
+"     \   'flake8': {'enabled': v:true},
+"     \   'jedi_definition': {
+"     \     'follow_imports': v:true,
+"     \     'follow_builtin_imports': v:true,
+"     \   },
+"     \ }}}
+"
+" if executable('pyls')
+"     autocmd User lsp_setup call lsp#register_server({
+"         \ 'name': 'pyls',
+"         \ 'cmd': {server_info->['pyls']},
+"         \ 'whitelist': ['python'],
+"         \ 'workgroup_config': s:pyls_config,
+"         \ })
+"     autocmd FileType python call s:configure_lsp()
+" endif
+"
+" function! s:configure_lsp() abort
+"     setlocal omnifunc=lsp#complete
+"     nnoremap <buffer> <C-]> :<C-u>LspDefinition<CR>
+"     nnoremap <buffer> gd :<C-u>LspDefinition<CR>
+"     nnoremap <buffer> gD :<C-u>LspReferences<CR>
+"     nnoremap <buffer> gs :<C-u>LspDocumentSymbol<CR>
+"     nnoremap <buffer> gS :<C-u>LspWorkspaceSymbol<CR>
+"     nnoremap <buffer> gQ :<C-u>LspDocumentFormat<CR>
+"     vnoremap <buffer> gQ :LspDocumentRangeFormat<CR>
+"     nnoremap <buffer> K :<C-u>LspHover<CR>
+"     nnoremap <buffer> <F1> :<C-u>LspImplementation<CR>
+"     nnoremap <buffer> <F2> :<C-u>LspRename<CR>
+" endfunction
+
 

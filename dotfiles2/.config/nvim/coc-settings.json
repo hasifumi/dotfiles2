@@ -1,0 +1,18 @@
+{
+  "languageserver": {
+    "python": {
+      "command": "python",
+      "trace.server": "verbose",
+      "filetypes": ["python"],
+      "settings": {
+        "pyls": {
+          "enable": true,
+          "trace": {
+            "server": "verbose"
+          }
+        }
+      }
+    }
+  },
+  "python.jediEnabled": false
+}

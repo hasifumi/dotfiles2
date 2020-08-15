@@ -7,11 +7,11 @@ hook_add = '''
     source ~/.config/dein/plugins/deol.vim
 '''
 
-[[plugins]]
-repo = 'Shougo/vimshell.vim'
-hook_add = '''
-    source ~/.config/dein/plugins/vimshell.vim
-'''
+# [[plugins]]
+# repo = 'Shougo/vimshell.vim'
+# hook_add = '''
+#     source ~/.config/dein/plugins/vimshell.vim
+# '''
 
 [[plugins]]
 repo = 'Shougo/defx.nvim'
@@ -53,27 +53,41 @@ repo = 'Townk/vim-autoclose'
 [[plugins]]
 repo = 'joshdick/onedark.vim'
 
-[[plugins]]
-repo = 'mattn/vim-lsp-settings'
+# [[plugins]]
+# repo = 'mattn/vim-lsp-settings'
+#
+# [[plugins]]
+# repo = 'prabirshrestha/async.vim'
+#
+# [[plugins]]
+# repo = 'prabirshrestha/asyncomplete.vim'
+#
+# [[plugins]]
+# repo = 'prabirshrestha/asyncomplete-lsp.vim'
+#
+# [[plugins]]
+# repo = 'prabirshrestha/vim-lsp'
+
+# [[plugins]]
+# repo = 'ryanolsonx/vim-lsp-python'
 
 [[plugins]]
-repo = 'prabirshrestha/async.vim'
+repo = 'tpope/vim-commentary'
 
 [[plugins]]
-repo = 'prabirshrestha/asyncomplete.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-lsp.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-
-[[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-
-[[plugins]]
-repo = 'mattn/vim-lsp-settings'
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
 merged = '0'
+hook_add = '''
+    source ~/.config/dein/plugins/coc.vim
+'''
+[[plugins]]
+repo = 'neoclide/coc-snippets'
 
 [[plugins]]
-repo = 'Shougo/vimshell.vim'
+repo = 'neoclide/coc-neco'
+
+[[plugins]]
+repo = 'Shougo/neco-vim'
+

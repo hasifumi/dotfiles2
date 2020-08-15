@@ -1,7 +1,7 @@
-nnoremap ,vs  :<c-u>VimShellPop<CR>
-nnoremap ,,vs  :<c-u>VimShellPop<CR>
-nnoremap <F5>  :<c-u>VimShellPop<CR>
-nnoremap ,vsf  :<c-u>VimShell<CR>
+nnoremap ,js  :<c-u>VimShellPop<CR>
+nnoremap ,jj  :<c-u>VimShellPop<CR>
+nnoremap <F7>  :<c-u>VimShellPop<CR>
+nnoremap ,jsf  :<c-u>VimShell<CR>
 "tnoremap <ESC>  <C-\><C-n>
 
 let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
@@ -15,14 +15,14 @@ else
   let g:vimshell_prompt = $USER."% "
 endif
 
-"" Initialize execute file list.
-"let g:vimshell_execute_file_list = {}
-""call vimshell#set_execute_file('txt,vim,c,h,cpp,d,xml,java', 'vim')
-"let g:vimshell_execute_file_list['rb'] = 'ruby'
-"let g:vimshell_execute_file_list['pl'] = 'perl'
-"let g:vimshell_execute_file_list['py'] = 'python'
-""call vimshell#set_execute_file('html,xhtml', 'gexe firefox')
-"
+" Initialize execute file list.
+let g:vimshell_execute_file_list = {}
+call vimshell#set_execute_file('txt,vim,c,h,cpp,d,xml,java', 'vim')
+let g:vimshell_execute_file_list['rb'] = 'ruby'
+let g:vimshell_execute_file_list['pl'] = 'perl'
+let g:vimshell_execute_file_list['py'] = 'python'
+call vimshell#set_execute_file('html,xhtml', 'gexe firefox')
+
 autocmd FileType vimshell call s:my_defin()
 function! s:my_defin()
   call vimshell#altercmd#define('g', 'git')
