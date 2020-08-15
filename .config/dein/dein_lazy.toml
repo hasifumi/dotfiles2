@@ -1,19 +1,9 @@
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_source = '''
-  let g:deoplete#enable_at_startup = 1
-  inoremap <expr><tab> pumvisible() ? "\<C-n>" :
-        \ neosnippet#expandable_or_jumpable() ?
-        \    "\<Plug>(neosnippet_expand_or_jump)" : "\<tab>"
-'''
-on_i = 1
-
-[[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
-hook_source = '''
+hook_add = '''
   imap <C-k> <Plug>(neosnippet_expand_or_jump)
   smap <C-k> <Plug>(neosnippet_expand_or_jump)
   xmap <C-k> <Plug>(neosnippet_expand_target)
@@ -26,6 +16,13 @@ on_ft = ['snippet']
 depends = ['neosnippet-snippets']
 
 [[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+    source ~/.config/dein/plugins/deoplete.vim
+'''
+on_i = 1
+
+[[plugins]]
     repo = 'Shougo/neco-vim'
     on_source = ['deoplete']
 
@@ -34,8 +31,13 @@ depends = ['neosnippet-snippets']
     on_source = ['deoplete']
 
 [[plugins]]
-    repo = 'deoplete-plugins/deoplete-jedi'
-    on_source = ['deoplete']
+repo = 'deoplete-plugins/deoplete-jedi'
+on_source = ['deoplete']
+on_ft = 'python'
+hook_add = '''
+    let g:deoplete#sources#jedi#python_path = substitute(substitute(system("which python")[:-2],"/c","c:","g"),"/",'\',"g")
+'''
+#     let g:deoplete#sources#jedi#python_path = 'c:\ProgramData\Anaconda3\envs\test_py27\python'
 
 [[plugins]]
     repo = 'JuliaEditorSupport/deoplete-julia'
@@ -49,10 +51,4 @@ depends = ['neosnippet-snippets']
     repo = 'lighttiger2505/deoplete-vim-lsp'
     on_source = ['deoplete']
 
-[[plugins]]
-    repo = 'Shougo/neoinclude.vim'
-    on_source = ['deoplete']
 
-[[plugins]]
-    repo = 'Shougo/vimshell.vim'
-    on_source = ['deoplete']
