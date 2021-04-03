@@ -55,6 +55,7 @@ if has('win32')
     let g:python_host_prog = 'C:/ProgramData/Anaconda3/envs/test_py27/python'
 else
     let g:python3_host_prog = '/usr/bin/python3'
+    let g:python_host_prog = '/usr/bin/python2'
 endif
 
 " tab ------------------------------------
