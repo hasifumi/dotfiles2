@@ -136,6 +136,9 @@ if has('vim_starting') && dein#check_install()
 endif
 
 let g:user_emmet_leader_key='<C-y>'
+" autocmd User EasyMotionPromptBegin call lsp#disable()<CR>
+" autocmd User EasyMotionPromptBegin call lsp#enable()<CR>
+" autocmd User EasyMotionPromptEnd call coc#refresh()<CR>
 
 "End dein Scripts-------------------------
 

@@ -130,3 +130,6 @@ repo = 'jiangmiao/auto-pair'
 [[plugins]]
 repo = 'mattn/emmet-vim'
 
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
