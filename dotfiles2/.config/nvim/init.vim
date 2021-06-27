@@ -133,6 +133,8 @@ if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
+let g:user_emmet_leader_key='<C-y>'
+
 "End dein Scripts-------------------------
 
 " Required:

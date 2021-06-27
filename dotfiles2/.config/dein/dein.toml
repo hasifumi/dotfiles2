@@ -124,3 +124,9 @@ repo = 'neoclide/coc-neco'
 [[plugins]]
 repo = 'Shougo/neco-vim'
 
+[[plugins]]
+repo = 'jiangmiao/auto-pair'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
