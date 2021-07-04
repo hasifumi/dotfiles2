@@ -136,6 +136,7 @@ if has('vim_starting') && dein#check_install()
 endif
 
 let g:user_emmet_leader_key='<C-y>'
+nmap s <Plug>(easymotion-overwin-f2)
 
 "End dein Scripts-------------------------
 
