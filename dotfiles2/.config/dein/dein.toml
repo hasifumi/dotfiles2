@@ -1,5 +1,5 @@
-[[plugins]]
-repo = 'Shougo/dein.vim'
+# [[plugins]]
+# repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'Shougo/deol.nvim'
@@ -122,14 +122,17 @@ repo = 'neoclide/coc-snippets'
 repo = 'neoclide/coc-neco'
 
 [[plugins]]
-repo = 'Shougo/neco-vim'
-
-[[plugins]]
-repo = 'jiangmiao/auto-pair'
+repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
 

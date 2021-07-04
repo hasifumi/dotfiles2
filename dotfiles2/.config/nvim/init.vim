@@ -43,7 +43,7 @@ nnoremap <C-g> g;
 inoremap <silent> jj <ESC>
 nmap <Esc><Esc> :noh<CR>
 
-colorscheme desert
+" colorscheme desert
 
 " 開いたファイルのディレクトリに自動移動
 "set autochdir test
@@ -136,15 +136,13 @@ if has('vim_starting') && dein#check_install()
 endif
 
 let g:user_emmet_leader_key='<C-y>'
-" autocmd User EasyMotionPromptBegin call lsp#disable()<CR>
-" autocmd User EasyMotionPromptBegin call lsp#enable()<CR>
-" autocmd User EasyMotionPromptEnd call coc#refresh()<CR>
 
 "End dein Scripts-------------------------
 
 " Required:
 filetype plugin indent on
 syntax enable
+colorscheme onedark
 
 " let s:pyls_config = {'pyls': {'plugins': {
 "     \   'pycodestyle': {'enabled': v:true},

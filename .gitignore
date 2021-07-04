@@ -1,1 +1,13 @@
 dotfiles2/.config/coc/**
+dotfiles2/.config/fish/**
+dotfiles2/.config/Thunar/**
+dotfiles2/.config/dconf/**
+dotfiles2/.config/evolution/**
+dotfiles2/.config/exercism/**
+dotfiles2/.config/goa-1.0/**
+dotfiles2/.config/google-chrome/**
+dotfiles2/.config/ibus/**
+dotfiles2/.config/pulse/**
+dotfiles2/.config/user-dirs.dirs
+dotfiles2/.config/user-dirs.locale
+dotfiles2/.config/xfce4/**
