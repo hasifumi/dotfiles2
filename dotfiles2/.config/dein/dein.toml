@@ -142,3 +142,17 @@ repo = 'tpope/vim-fugitive'
 [[plugins]]
 repo = 'honza/vim-snippets'
 
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+merged = 0
+
+[[plugins]]
+repo = 'yuki-ycino/fzf-preview.vim'
+rev = 'release/remote'
+hook_add = '''
+    source ~/.config/dein/plugins/fzf-preview.vim
+'''
+
+# [[plugins]]
+# repo = 'junegunn/fzf.vim'

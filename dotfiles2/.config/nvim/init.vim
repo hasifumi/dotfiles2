@@ -34,7 +34,8 @@ nnoremap <M-h> :<C-u>help<Space><C-r><C-w><CR>
 " F6キーで検索履歴を開く
 nnoremap <F5> q:
 nnoremap <F6> q/
-" q:、q/、q? は無効化
+" q、q:、q/、q? は無効化
+nnoremap q  <NOP>
 nnoremap q: <NOP>
 nnoremap q/ <NOP>
 nnoremap q? <NOP>
@@ -42,6 +43,8 @@ nnoremap q? <NOP>
 nnoremap <C-g> g;
 inoremap <silent> jj <ESC>
 nmap <Esc><Esc> :noh<CR>
+nnoremap ;  :
+nnoremap :  ;
 
 " colorscheme desert
 
@@ -126,6 +129,7 @@ if dein#load_state(s:dein_home_dir)
     call dein#add(s:dein_repo_dir)
     call dein#load_toml(s:toml_file, {'lazy': 0})
     call dein#load_toml(s:toml_lazy, {'lazy': 1})
+
     call dein#end()
     call dein#save_state()
 endif

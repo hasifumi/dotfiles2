@@ -6,7 +6,9 @@ nnoremap <silent>,dm   :<C-u>Denite -direction=topleft file_mru<CR>
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
   nnoremap <silent><buffer><expr> <ESC>    denite#do_map('quit')
+  nnoremap <silent><buffer><expr> q        denite#do_map('quit')
   nnoremap <silent><buffer><expr> <CR>     denite#do_map('do_action')
+  nnoremap <silent><buffer><expr> o        denite#do_map('do_action')
   nnoremap <silent><buffer><expr> d        denite#do_map('do_action', 'delete')
   nnoremap <silent><buffer><expr> p        denite#do_map('toggle_auto_action', 'preview')
   nnoremap <silent><buffer><expr> i        denite#do_map('open_filter_buffer')
@@ -28,6 +30,9 @@ if executable('rg')
 endif
 
 nnoremap <silent> <C-p> :<C-u>Denite file buffer file:new<CR>
+nnoremap <silent>,df :<C-u>Denite file buffer file:new<CR>
+nnoremap <silent>,dg :<C-u>Denite grep<CR>
+nnoremap <silent>,dl :<C-u>Denite line<CR>
 " nnoremap <silent> <C-p> :<C-u>Denite file/rec<CR>
 
 nnoremap <silent> // :<C-u>Denite -buffer-name=search -auto-action=highlight line<CR>
